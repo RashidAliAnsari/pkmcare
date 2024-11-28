@@ -1,0 +1,31 @@
+/* .home-left{
+    background-image: url(./photos/2.JPG);
+} */
+
+#services .card{
+    /* background-color: #38659C !important; */
+    background-color: #6390c7 !important;
+    color: white;
+    min-height: 280px;
+    margin-top: 0px !important;
+}
+
+@media screen and (max-width: 576px) {
+    .home-left {
+        height: 195px;
+        text-align: center;
+      }
+      .home-left div h1{
+        text-align: center;
+      }
+    .home-right{
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+    .phone{
+        margin: 20px 0 20px 0;
+    }
+    .phone h3{
+        font-size: 18px;
+    }
+  }
