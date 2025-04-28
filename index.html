@@ -6,10 +6,13 @@
     <title>Pasha Kidney Medical Care </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css?version=1">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
+
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/> -->
+
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJGHP6J116"></script>
@@ -52,17 +55,17 @@
                   </a>
                 </li>
                 <li>
+                  <a href="#gallery" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#aboutus"></use></svg>
+                    Gallery
+                  </a>
+                </li>
+                <li>
                   <a href="#services" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#team"></use></svg>
                     Services
                   </a>
                 </li>
-                <!-- <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#team"></use></svg>
-                    Timings
-                  </a>
-                </li> -->
               </ul>
             </div>
           </div>
@@ -89,6 +92,7 @@
                 <div class="card text-start shadow-lg p-3 mb-5 bg-body rounded observe-viewport animate__animated ">
                     <div class="card-body">
                         <h1 class="card-title text-center">About Us</h1>
+
                         <div class="row">
                             <div class="col-md-9 order-last order-sm-first">
                                 <p class="card-text">
@@ -108,28 +112,41 @@
                                                 <li>He furthered his expertise by completing a fellowship at Dartmouth Hitchcock Medical College.</li>
                                             </ul>
                                         </p>
-                                        <p>
-                                            <b>Dedicated to Patient Care:</b>
-                                            <ul>
-                                                <li>Dr. Pasha brings a wealth of experience to his practice, having served the Hudson Valley community for over seven years.</li>
-                                                <li>He currently holds the position of Attending Nephrologist/Hospitalist at the VA Hudson Valley Health Care System.</li>
-                                                <li>Additionally, he is affiliated with multiple hospitals in the area, including Mid Hudson Regional Hospital, Westchester Medical Center, Montefiore St. Luke's Cornwall Hospital, and Vassar Brothers Medical Center.</li>
-                                                <li>Dr. Pasha demonstrates a strong commitment to patient care by providing dialysis services for patients at Fresenius Dialysis Center at Saint Luke's Cornwall Campus and Fresenius Kidney Care Beacon Dialysis NY</li>
-                                            </ul>
-                                        </p>
-                                        <p><b>Trust Your Kidney Care to Dr. Pasha</b></p>
-                                        <p>Dr. Pasha's qualifications, experience, and dedication make him a valuable resource for patients seeking comprehensive kidney care in the Hudson Valley.</p>
+                                        
                                     </div>
                                 </p>
                             </div>
                             <div class="col-md-3">
-                                <img
+                                <!-- <img
                                     src="./assets/photos/9.JPG"
                                     class="img-fluid rounded-top"
+                                    alt=""
+                                /> -->
+                                <img
+                                    src="./assets/photos/10.jpeg"
+                                    class="img-fluid rounded-top"
+                                    height="450"
+                                    width="450"
                                     alt=""
                                 />
                                 
                             </div>
+                        </div>
+
+                        <div class="row">
+                          <div>
+                            <p>
+                              <b>Dedicated to Patient Care:</b>
+                              <ul>
+                                  <li>Dr. Pasha brings a wealth of experience to his practice, having served the Hudson Valley community for over seven years.</li>
+                                  <li>He currently holds the position of Attending Nephrologist/Hospitalist at the VA Hudson Valley Health Care System.</li>
+                                  <li>Additionally, he is affiliated with multiple hospitals in the area, including Mid Hudson Regional Hospital, Westchester Medical Center, Montefiore St. Luke's Cornwall Hospital, and Vassar Brothers Medical Center.</li>
+                                  <li>Dr. Pasha demonstrates a strong commitment to patient care by providing dialysis services for patients at Fresenius Dialysis Center at Saint Luke's Cornwall Campus and Fresenius Kidney Care Beacon Dialysis NY</li>
+                              </ul>
+                          </p>
+                          <p><b>Trust Your Kidney Care to Dr. Pasha</b></p>
+                          <p>Dr. Pasha's qualifications, experience, and dedication make him a valuable resource for patients seeking comprehensive kidney care in the Hudson Valley.</p>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -189,7 +206,7 @@
             <div class="col-md-4">
                 <div class="card text-start shadow-lg p-3 mt-5 mb-4 bg-body rounded">
                     <div class="card-title text-center">
-                        <b>Comprehensive care for a variety of other kidney-related conditions</b>
+                        <b>Other kidney-related conditions</b>
                     </div>
                     <div class="card-body">
                         Acute and Chronic Kidney Disease <br>
@@ -197,14 +214,64 @@
                         Diabetic Kidney Disease <br>
                         Kidney Stones <br>
                         Electrolyte Imbalances <br>
-                        Vasculitis related and Autoimmune <br>
-                        Diseases of the kidney
+                        Autoimmune and vasculitis-related kidney disease <br>
+                        Polycystic kidney disease
 
                     </div>
                 </div>
             </div>
             
         </div>
+
+        <!-- Gallery -->
+        <div class="row mt-5" id="gallery">
+          <div class="col-12">
+            <h1 class="card-title text-center">Gallery</h1>
+
+            <div
+              class="gallery js-flickity mt-3"
+              data-flickity='{
+                "cellAlign": "left",
+                "contain": true,
+                "wrapAround": true,
+                "autoPlay": 2500,
+                "prevNextButtons": true,
+                "pageDots": false
+              }'
+            >
+              <div class="gallery-cell">
+                <a href="./assets/gallery/1.jpeg" target="_blank">
+                  <img src="./assets/gallery/1.jpeg" alt="Gallery 1">
+                </a>
+              </div>
+              <div class="gallery-cell">
+                <a href="./assets/gallery/2.jpeg" target="_blank">
+                  <img src="./assets/gallery/2.jpeg" alt="Gallery 2">
+                </a>
+              </div>
+              <div class="gallery-cell">
+                <a href="./assets/gallery/3.jpeg" target="_blank">
+                  <img src="./assets/gallery/3.jpeg" alt="Gallery 3">
+                </a>
+              </div>
+              <div class="gallery-cell">
+                <a href="./assets/gallery/4.jpeg" target="_blank">
+                  <img src="./assets/gallery/4.jpeg" alt="Gallery 4">
+                </a>
+              </div>
+              <div class="gallery-cell">
+                <a href="./assets/gallery/5.jpeg" target="_blank">
+                  <img src="./assets/gallery/5.jpeg" alt="Gallery 5">
+                </a>
+              </div>
+              <!-- add more .gallery-cell blocks as needed -->
+            </div>
+          </div>
+        </div>
+
+
+  
+
 
         <!--contact us-->
         <div class="row mt-5" id="contactus">
@@ -235,40 +302,6 @@
                                 </button>
                                 
                             </div>
-                            <!-- <div class="col-md-6 d-flex justify-content-center">
-                                <div class="phone">
-                                    <div>
-                                        <h5><b>Phone :</b> (845) 202-3242</h5>
-                                    </div>
-                                    <div>
-                                        <h5><b>Email :</b> irpasha@pkmcare.com</h5>
-                                    </div>
-                                    <div>
-                                        <h5><b>Address :</b> 312 North Plan Road, <br>Newburgh, NY 12550</h5>
-                                    </div>
-
-                                </div>
-                            </div> -->
-
-
-                            <!-- <div class="col-md-6 d-flex justify-content-center">
-                                <div class="contact-info">
-                                    <div class="mb-3">
-                                        <h6 class="mb-1"><strong>Phone:</strong></h6>
-                                        <p class="ps-3 mb-0">(845) 202-3242</p>
-                                    </div>
-                                    <div class="mb-3">
-                                        <h6 class="mb-1"><strong>Email:</strong></h6>
-                                        <p class="ps-3 mb-0">irpasha@pkmcare.com</p>
-                                    </div>
-                                    <div class="mb-3">
-                                        <h6 class="mb-1"><strong>Address:</strong></h6>
-                                        <p class="ps-3 mb-0">312 North Plan Road,</p>
-                                        <p class="ps-3">Newburgh, NY 12550</p>
-                                    </div>
-                                </div>
-                            </div> -->
-
 
                             <div class="col-md-6">
                                 <div class="contact-info">
@@ -304,6 +337,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script> -->
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
     <script type="">
 
         const myElement = document.querySelector('.observe-viewport');
@@ -320,5 +359,37 @@
         observer.observe(myElement);
         
     </script>
+
+
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    slidesPerView: 4,
+    spaceBetween: 15,
+    breakpoints: {
+      0:   { slidesPerView: 1 },
+      576: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+</script>
+
+
+
+
 </body>
 </html>

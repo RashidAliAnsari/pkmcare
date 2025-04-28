@@ -6,9 +6,40 @@
     /* background-color: #38659C !important; */
     background-color: #6390c7 !important;
     color: white;
-    min-height: 280px;
+    min-height: 290px;
     margin-top: 0px !important;
 }
+
+
+/* make the default SVG icons black & smaller */
+#galleryCarousel .carousel-control-prev-icon,
+#galleryCarousel .carousel-control-next-icon {
+  /* invert the built-in white arrow to black */
+  filter: invert(0);
+  /* shrink down to 1.5rem × 1.5rem */
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 1.5rem 1.5rem;
+}
+
+/* Gallery cells all 4:3 and same height */
+.gallery-cell {
+    width: 25%;            /* 4 across */
+    aspect-ratio: 4 / 3;   /* lock to 4:3 ratio */
+    overflow: hidden;      /* crop anything outside */
+    margin-right: 0.5rem;  /* gutter */
+  }
+  
+  /* Images fill their cell and crop */
+  .gallery-cell img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+
 
 @media screen and (max-width: 576px) {
     .home-left {
